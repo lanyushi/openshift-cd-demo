@@ -146,9 +146,9 @@ GITHUB_ACCOUNT=${GITHUB_ACCOUNT:-siamaksade}
 GITHUB_REF=${GITHUB_REF:-ocp-4.1}
 
 function deploy() {
-  oc $ARG_OC_OPS new-project dev_$PRJ_SUFFIX   --display-name="Tasks - Dev"
-  oc $ARG_OC_OPS new-project stage_$PRJ_SUFFIX --display-name="Tasks - Stage"
-  oc $ARG_OC_OPS new-project cicd_$PRJ_SUFFIX  --display-name="CI/CD"
+  oc $ARG_OC_OPS new-project dev-$PRJ_SUFFIX   --display-name="Tasks - Dev"
+  oc $ARG_OC_OPS new-project stage-$PRJ_SUFFIX --display-name="Tasks - Stage"
+  oc $ARG_OC_OPS new-project cicd-$PRJ_SUFFIX  --display-name="CI/CD"
 
   sleep 2
 
